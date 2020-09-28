@@ -37,15 +37,15 @@ def check_price():
         server.ehlo()
 
 
-        server.login('vankarchaitanyaswaroop@gmail.com','')
+        server.login('','')
         subject = "price is afforable"
         body = "Buy now", "https://www.amazon.in/Think-Like-Monk-Jay-Shetty/dp/0008386595/ref=sr_1_2?crid=1HZ1CIU2BYY4G&dchild=1&keywords=think+like+a+monk+by+jay+shetty&qid=1601193915&sprefix=think%2Caps%2C628&sr=8-2"
 
         msg = f"subject: {subject}\n\n{body}"
 
         server.sendmail(
-            "vankarchaitanyaswaroop@gmail.com",
-            "vankarchaitanyaswaroop@gmail.com",
+            "",
+            "",
             msg
             )
 check_price()
